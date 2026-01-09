@@ -48,54 +48,51 @@ user-analytics-app/
 └── README.md
 
 
----
 
 ## ⚙️ Setup Steps
-
 ### 1️⃣ Prerequisites
 
 Ensure the following are installed on your system:
 
-- Python 3.9 or higher
-- Node.js (LTS version)
-- npm
-- MongoDB Community Server
+Python 3.9 or higher
 
----
+Node.js (LTS version)
+
+npm
+
+MongoDB Community Server
 
 ### 2️⃣ Start MongoDB
 
 Make sure MongoDB is running locally:
 
-```bash
 mongod
-
 
 (Default port: 27017)
 
-3️⃣ Backend Setup (Flask)
+### 3️⃣ Backend Setup (Flask)
+
 cd backend
 python -m venv venv
-venv\Scripts\activate   # Windows
+venv\Scripts\activate # Windows
 pip install -r requirements.txt
 python app.py
-
 
 The backend server will start at:
 
 http://localhost:4000
 
-4️⃣ Frontend Setup (React)
+### 4️⃣ Frontend Setup (React)
+
 cd frontend
 npm install
 npm start
-
 
 The frontend dashboard will be available at:
 
 http://localhost:3000
 
-5️⃣ Client-side Tracking Demo
+### 5️⃣ Client-side Tracking Demo
 
 Open tracker/demo.html directly in the browser
 
@@ -103,14 +100,14 @@ Interact with the page (page load and clicks)
 
 Events are automatically sent to the backend
 
-📊 Dashboard Usage
-Sessions View
+## 📊 Dashboard Usage
+### Sessions View
 
 Displays all sessions with total event counts
 
 Clicking a session shows the ordered list of events (user journey)
 
-Heatmap View
+### Heatmap View
 
 Enter the exact page URL where clicks were recorded
 
@@ -118,10 +115,9 @@ Example for local demo page:
 
 file:///C:/Users/<your-path>/tracker/demo.html
 
-
 Click positions are visualized as red dots
 
-🧠 Assumptions
+## 🧠 Assumptions
 
 The tracking script is embedded only on pages owned or controlled by the user
 
@@ -133,7 +129,7 @@ Heatmaps are generated only for pages where the tracking script is loaded
 
 Exact page URLs are used for querying heatmap data
 
-⚖️ Trade-offs
+## ⚖️ Trade-offs
 
 Authentication and authorization are not implemented (out of scope)
 
@@ -147,7 +143,7 @@ Session timeout handling is not implemented
 
 The application prioritizes simplicity and clarity over production-scale optimizations
 
-🔮 Possible Improvements
+## 🔮 Possible Improvements
 
 Batch event ingestion for improved performance
 
