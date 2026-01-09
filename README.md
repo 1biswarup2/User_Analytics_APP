@@ -64,95 +64,80 @@ MongoDB Community Server
 
 ### 2️⃣ Start MongoDB
 
-Make sure MongoDB is running locally:
-
-mongod
-
-(Default port: 27017)
+Make sure MongoDB is running locally: (Default port: 27017)
 
 ### 3️⃣ Backend Setup (Flask)
-
+1.
 cd backend
 python -m venv venv
 venv\Scripts\activate # Windows
 pip install -r requirements.txt
 python app.py
 
-The backend server will start at:
-
-http://localhost:4000
+2. The backend server will start at: http://localhost:4000
 
 ### 4️⃣ Frontend Setup (React)
-
+1.
 cd frontend
 npm install
 npm start
-
-The frontend dashboard will be available at:
-
-http://localhost:3000
+2. The frontend dashboard will be available at: http://localhost:3000
 
 ### 5️⃣ Client-side Tracking Demo
 
-Open tracker/demo.html directly in the browser
+1. Open tracker/demo.html directly in the browser
 
-Interact with the page (page load and clicks)
+2. Interact with the page (page load and clicks)
 
-Events are automatically sent to the backend
+3. Events are automatically sent to the backend
 
 ## 📊 Dashboard Usage
 ### Sessions View
 
-Displays all sessions with total event counts
+1. Displays all sessions with total event counts
 
-Clicking a session shows the ordered list of events (user journey)
+2. Clicking a session shows the ordered list of events (user journey)
 
 ### Heatmap View
 
-Enter the exact page URL where clicks were recorded
+1. Enter the exact page URL where clicks were recorded
 
-Example for local demo page:
+2. Example for local demo page: C:/Users/<your-path>/tracker/demo.html
 
-file:///C:/Users/<your-path>/tracker/demo.html
-
-Click positions are visualized as red dots
+3. Click positions are visualized as red dots
 
 ## 🧠 Assumptions
 
-The tracking script is embedded only on pages owned or controlled by the user
+1. The tracking script is embedded only on pages owned or controlled by the user
 
-User sessions are browser-based and identified using localStorage
+2. User sessions are browser-based and identified using localStorage
 
-MongoDB is running locally and accessible without authentication
+3. MongoDB is running locally and accessible without authentication
 
-Heatmaps are generated only for pages where the tracking script is loaded
+4. Heatmaps are generated only for pages where the tracking script is loaded
 
-Exact page URLs are used for querying heatmap data
+5. Exact page URLs are used for querying heatmap data
 
 ## ⚖️ Trade-offs
 
-Authentication and authorization are not implemented (out of scope)
+1. Authentication and authorization are not implemented (out of scope)
 
-Heatmap visualization uses simple dot-based rendering instead of density gradients
+2. Heatmap visualization uses simple dot-based rendering instead of density gradients
 
-URL matching for heatmaps is exact and string-based
+3. URL matching for heatmaps is exact and string-based
 
-No batching or retry mechanism for event ingestion
+4. No batching or retry mechanism for event ingestion
 
-Session timeout handling is not implemented
+5. Session timeout handling is not implemented
 
-The application prioritizes simplicity and clarity over production-scale optimizations
+6. The application prioritizes simplicity and clarity over production-scale optimizations
 
 ## 🔮 Possible Improvements
 
-Batch event ingestion for improved performance
+1. Density-based heatmap visualization
 
-URL normalization and dropdown-based heatmap selection
+2. Session timeout and expiration handling
 
-Density-based heatmap visualization
+4. Dockerized setup for easier deployment
 
-Session timeout and expiration handling
-
-Dockerized setup for easier deployment
-
-Cloud deployment (AWS / Render / Railway)
+5. Cloud deployment (AWS / Render / Railway)
