@@ -41,13 +41,11 @@ This project was built as part of a **Full Stack Engineer assignment**.
 ---
 
 ## 📁 Project Structure
-user-analytics-app/
-├── backend/ # Flask backend
-├── frontend/ # React dashboard
-├── tracker/ # Tracking script + demo page
-└── README.md
-
-
+user-analytics-app:
+ - backend/ # Flask backend
+ - frontend/ # React dashboard
+ -  tracker/ # Tracking script + demo page
+ -  README.md
 
 ## ⚙️ Setup Steps
 ### 1️⃣ Prerequisites
