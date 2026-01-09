@@ -46,7 +46,6 @@ user-analytics-app:
  - frontend/ # React dashboard
  -  tracker/ # Tracking script + demo page
  -  README.md
-
 ## ⚙️ Setup Steps
 ### 1️⃣ Prerequisites
 
