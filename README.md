@@ -63,7 +63,7 @@ Ensure the following are installed on your system:
 Make sure MongoDB is running locally: (Default port: 27017)
 
 ### 3️⃣ Backend Setup (Flask)
-1."cd backend" --> "python -m venv venv" --> "venv\Scripts\activate" ( for Windows ) or source venv/bin/activate ( for linux ) --> "pip install -r requirements.txt" --> "python app.py"
+1. "cd backend" --> "python -m venv venv" --> "venv\Scripts\activate" ( for Windows ) or source venv/bin/activate ( for linux ) --> "pip install -r requirements.txt" --> "python app.py"
 
 2. The backend server will start at: http://localhost:4000
 
