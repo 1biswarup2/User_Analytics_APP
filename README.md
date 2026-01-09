@@ -93,6 +93,8 @@ Make sure MongoDB is running locally: (Default port: 27017)
 
 3. Click positions are visualized as red dots
 
+![Dashboard Screenshot](Dashboard.png)
+
 ## 🧠 Assumptions
 
 1. The tracking script is embedded only on pages owned or controlled by the user
