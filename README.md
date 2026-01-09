@@ -54,33 +54,23 @@ user-analytics-app/
 
 Ensure the following are installed on your system:
 
-Python 3.9 or higher
+1. Python 3.9 or higher
 
-Node.js (LTS version)
+2. npm
 
-npm
-
-MongoDB Community Server
+3. MongoDB Community Server
 
 ### 2️⃣ Start MongoDB
 
 Make sure MongoDB is running locally: (Default port: 27017)
 
 ### 3️⃣ Backend Setup (Flask)
-1.
-cd backend
-python -m venv venv
-venv\Scripts\activate # Windows
-pip install -r requirements.txt
-python app.py
+1."cd backend" --> "python -m venv venv" --> "venv\Scripts\activate" ( for Windows ) or source venv/bin/activate ( for linux ) --> "pip install -r requirements.txt" --> "python app.py"
 
 2. The backend server will start at: http://localhost:4000
 
 ### 4️⃣ Frontend Setup (React)
-1.
-cd frontend
-npm install
-npm start
+1. "cd frontend" --> "npm install" --> "npm start"
 2. The frontend dashboard will be available at: http://localhost:3000
 
 ### 5️⃣ Client-side Tracking Demo
